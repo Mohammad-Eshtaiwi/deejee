@@ -4,33 +4,29 @@
 const menu = document.querySelector('.burger');
 const navList = document.querySelector('.main-nav');
 const closeBtn = document.querySelector('.close');
+const body = document.querySelector('body');
 
 function toggleNavList() {
   console.log('hi');
   navList.classList.toggle('show-list');
   navList.classList.toggle('right-to-left-f');
+  body.classList.toggle('overflow-hidden');
 }
 menu.addEventListener('click', toggleNavList);
 function close() {
   console.log('hi');
   navList.classList.toggle('show-list');
   navList.classList.toggle('right-to-left-f');
+  body.classList.toggle('overflow-hidden');
 }
 closeBtn.addEventListener('click', close);
-function displayDropdown(event) {
-  console.log('hi');
-  console.log(event.path[0].children);
-  event.path[0].children[0].style.display = 'block';
-}
+
 function hideDropdown(event) {
   console.log('hi');
   console.log(event.path[0].children);
   event.path[0].children[0].style.display = 'none';
 }
-const droppable = document.querySelector('.droppable');
-console.log(droppable);
-droppable.addEventListener('mouseover', displayDropdown);
-droppable.addEventListener('mouseout', hideDropdown);
+
 // Glide
 // const glide = document.querySelector('.glide');
 new Glide('.glide', {
