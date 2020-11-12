@@ -506,15 +506,8 @@ footer {
 footer .title {
   font-size: 1.15rem;
 }
-footer .title-effect-line::before {
-  content: '';
-  width: 60px;
-  position: absolute;
-  height: 0.1em;
-  background-color: var(--main-color);
-  top: 1.7em;
-  left: 30px;
-  transform: translateX(-50%);
+footer .title-effect-line {
+  margin: 1rem 0 1.2rem 0;
 }
 
 footer .subscribe form {

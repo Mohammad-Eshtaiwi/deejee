@@ -40,16 +40,11 @@
   }
 }
 
-.title-effect-line::before {
-  content: '';
+.title-effect-line {
   width: 60px;
-  position: absolute;
   height: 0.05em;
   background-color: var(--main-color);
-  top: 1.7em;
-
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 1rem auto 1rem auto;
 }
 /* overlay */
 .overlay {
@@ -75,7 +70,6 @@
 .title {
   color: #fff;
   font-size: 2rem;
-  margin-bottom: 1.5em;
 }
 
 /* image scale transition */
