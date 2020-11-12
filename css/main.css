@@ -119,7 +119,7 @@ nav .container > ul > li + li {
   display: none;
   margin-top: 240px;
 }
-.dropdown i {
+.droppable i {
   padding-left: 10px;
 }
 .dropdown a {
